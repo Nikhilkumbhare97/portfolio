@@ -105,6 +105,62 @@ header p {
     margin: 0 auto;
 }
 
+/* Download Resume Button */
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 30px;
+    padding: 14px 28px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.download-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.download-btn:active {
+    transform: translateY(0);
+}
+
+.download-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.download-btn svg {
+    width: 20px;
+    height: 20px;
+    stroke-width: 2.5;
+}
+
+.download-btn svg.spinning {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 /* NAVBAR */
 nav {
     background: rgba(255, 255, 255, 0.95);
@@ -514,6 +570,88 @@ nav a:hover::after {
     font-size: 0.95rem;
 }
 
+/* EDUCATION */
+#education {
+    text-align: center;
+}
+
+.education-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.education-card {
+    background: var(--light);
+    border: 2px solid var(--border-light);
+    border-radius: 16px;
+    padding: 36px 32px;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.education-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-card);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px var(--shadow-lg);
+    border-color: var(--primary);
+}
+
+.education-card:hover::before {
+    transform: scaleX(1);
+}
+
+.education-icon {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.education-card h3 {
+    margin: 0 0 12px 0;
+    color: var(--text-dark);
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+.education-field {
+    margin: 0 0 8px 0;
+    color: var(--primary);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.education-institution {
+    margin: 0 0 12px 0;
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.education-details {
+    margin: 0;
+    color: var(--text-dark);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
 /* CONTACT */
 #contact {
     text-align: center;
@@ -713,6 +851,11 @@ footer {
     }
 
     .contact-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .education-container {
         grid-template-columns: 1fr;
         gap: 20px;
     }

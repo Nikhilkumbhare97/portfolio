@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil Kumbhare - Full Stack Developer Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Calibri, sans-serif;
+            font-size: 11pt;
+            line-height: 1.4;
+            color: #000000;
+            background: #ffffff;
+            padding: 15px;
+        }
+        
+        .resume-container {
+            max-width: 8.5in;
+            margin: 0 auto;
+            background: #ffffff;
+        }
+        
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #000000;
+            padding-bottom: 10px;
+        }
+        
+        .header h1 {
+            font-size: 22pt;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #000000;
+        }
+        
+        .header .contact-info {
+            font-size: 10pt;
+            margin-top: 6px;
+        }
+        
+        .header .contact-info span {
+            margin: 0 10px;
+        }
+        
+        /* Sections */
+        .section {
+            margin-bottom: 12px;
+        }
+        
+        .section-title {
+            font-size: 13pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            color: #000000;
+            border-bottom: 1px solid #000000;
+            padding-bottom: 3px;
+        }
+        
+        /* Professional Summary */
+        .summary {
+            text-align: justify;
+            margin-bottom: 12px;
+            font-size: 11pt;
+            line-height: 1.4;
+        }
+        
+        /* Experience */
+        .experience-item, .education-item, .project-item {
+            margin-bottom: 12px;
+        }
+        
+        .job-header, .education-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 4px;
+        }
+        
+        .job-title, .education-degree {
+            font-weight: bold;
+            font-size: 11pt;
+        }
+        
+        .company-name, .education-institution {
+            font-weight: bold;
+            font-size: 11pt;
+        }
+        
+        .job-duration, .education-duration {
+            font-size: 10pt;
+            font-style: italic;
+        }
+        
+        .job-description ul, .project-description ul {
+            margin-left: 20px;
+            margin-top: 4px;
+            margin-bottom: 4px;
+        }
+        
+        .job-description li, .project-description li {
+            margin-bottom: 3px;
+            text-align: justify;
+            font-size: 10pt;
+            line-height: 1.35;
+        }
+        
+        /* Skills */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 5px;
+        }
+        
+        .skill-item {
+            font-size: 10pt;
+        }
+        
+        /* Awards */
+        .award-item {
+            margin-bottom: 6px;
+        }
+        
+        .award-title {
+            font-weight: bold;
+            font-size: 10pt;
+        }
+        
+        .award-item > div:not(.award-title) {
+            font-size: 10pt;
+            line-height: 1.35;
+        }
+        
+        .award-date {
+            font-size: 10pt;
+            font-style: italic;
+        }
+        
+        /* Print styles */
+        @media print {
+            body {
+                padding: 0.3in;
+                font-size: 10pt;
+            }
+            
+            .resume-container {
+                max-width: 100%;
+            }
+            
+            .section {
+                margin-bottom: 10px;
+                page-break-inside: avoid;
+            }
+            
+            .experience-item, .education-item, .project-item {
+                margin-bottom: 10px;
+                page-break-inside: avoid;
+            }
+            
+            .job-description li, .project-description li {
+                margin-bottom: 2px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <!-- Header -->
+        <div class="header">
+            <h1>NIKHIL KUMBHARE</h1>
+            <div class="contact-info">
+                <span>Email: nikhilk190697@gmail.com</span>
+                <span>|</span>
+                <span>Mobile: +91 7020296774</span>
+                <span>|</span>
+                <span>LinkedIn: linkedin.com/in/nikhilkumbhare97</span>
+            </div>
+        </div>
+
+        <!-- Professional Summary -->
+        <div class="section">
+            <div class="section-title">Professional Summary</div>
+            <div class="summary">
+                Full-Stack Developer with 4.5+ years of progressive experience delivering enterprise-grade solutions across Angular (9+) frontends and Java/Spring backends. Recognized for optimizing mission-critical systems to 460 TPS, ensuring WCAG 2.1 accessibility compliance, and providing technical and functional support for complex production deployments. Adept in Node.js, GraphQL, and Elasticsearch, with proven success in architecting resilient APIs and performance-tuned applications. Trusted by global financial institutions including HSBC and NAB, with a track record of mentoring UI squads, resolving client escalations, and leading cross-functional delivery teams to exceed business goals.
+            </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="section">
+            <div class="section-title">Technical Skills</div>
+            <div class="skills-list">
+                <span class="skill-item"><strong>Frontend:</strong> Angular (9+ including v14, v16), TypeScript, JavaScript, HTML5, CSS3, WCAG 2.1</span>
+                <span class="skill-item"><strong>Backend:</strong> Java 17, Spring Boot, Node.js, REST APIs, GraphQL</span>
+                <span class="skill-item"><strong>Databases:</strong> MySQL, PostgreSQL, Oracle, Elasticsearch</span>
+                <span class="skill-item"><strong>Tools & Frameworks:</strong> Hasura, Olive Framework (internal enterprise), Git/GitHub, Docker, Cursor</span>
+                <span class="skill-item"><strong>Other:</strong> Agile/Scrum delivery, Performance Optimization, Code Review, Team Leadership</span>
+            </div>
+        </div>
+
+        <!-- Professional Experience -->
+        <div class="section">
+            <div class="section-title">Professional Experience</div>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Consultant</div>
+                        <div class="company-name">Intellect Design Arena Ltd.</div>
+                    </div>
+                    <div class="job-duration">July 2025 - Present</div>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Optimized RTFC (Real-Time Fund Check) processing through advanced code and query tuning, achieving 460 TPS without breaking existing functionality, delivered in October 2025 under guidance from senior management and CTO.</li>
+                        <li>Contributed to successful retrofitting of codebase from version 24 to 25, ensuring seamless transition, system stability, and zero downtime; managed post-release defect resolution by providing critical support and fixes.</li>
+                        <li>Currently utilizing Codexa internal product to generate Angular 14 and Java 17 services; providing debugging and analysis support when configurations or functionalities are unsupported, recommending alternative logic and guiding teams toward stable solutions.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Associate Consultant</div>
+                        <div class="company-name">Intellect Design Arena Ltd.</div>
+                    </div>
+                    <div class="job-duration">July 2023 - June 2025</div>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Provided comprehensive support for CFF project, resolving issues and enabling successful presales demonstrations for multiple clients</li>
+                        <li>Led proactive testing, UAT, and pre-production support for HSBC, resolving critical issues and ensuring deployment readiness</li>
+                        <li>Delivered SIT support for CBOS-22 Hasura upgrade across SOCGEN and RBC, ensuring compatibility and functionality in diverse environments</li>
+                        <li>Deployed on-site support at HSBC during critical project phases, providing real-time technical assistance and issue resolution</li>
+                        <li>Executed Node.js version upgrades for NAB, ensuring seamless transition with zero data loss</li>
+                        <li>Supported HSBC migration team across pre-production and production phases, successfully executing production migration in July 2024</li>
+                        <li>Owned end-to-end post-production support for HSBC, independently resolving critical issues and developing change requests (CRs) to ensure system stability and client satisfaction</li>
+                        <li>Transitioned to RTFC (Real-Time Fund Check) product development, mastering Olive framework (internal) and Java 17, and delivering multiple modules end-to-end</li>
+                        <li>Mentored team members on product functionality, implemented vulnerability and X-ray scan fixes, and contributed to NFR section for RTFC processing</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Project Engineer</div>
+                        <div class="company-name">Intellect Design Arena Ltd.</div>
+                    </div>
+                    <div class="job-duration">June 2021 - June 2023</div>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Joined Liquidity CBX-FO product team, initially resolving frontend SIT issues and played a key role in achieving WCAG 2.1 compliance for HSBC.</li>
+                        <li>Expanded into Node.js backend development, gaining expertise in GraphQL and Elasticsearch 7, and delivered multiple change requests (CRs) end-to-end on schedule.</li>
+                        <li>Resolved UAT issues and enabled successful production go-live for clients including BBL, NAB, and FTB.</li>
+                        <li>Optimized Node.js backend services for HSBC, significantly improving system efficiency and response times.</li>
+                        <li>Led a UI team of 2–3 new joiners on the CFF internal project while independently managing Node.js backend services, successfully developing and delivering critical modules.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <div class="section-title">Education</div>
+            <div class="education-item">
+                <div class="education-header">
+                    <div>
+                        <div class="education-degree">Bachelor of Engineering in Mechanical Engineering</div>
+                        <div class="education-institution">Sinhgad Academy of Engineering, Pune | CGPA: 8.16</div>
+                    </div>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-header">
+                    <div>
+                        <div class="education-degree">GATE Qualified (Mechanical, 2020)</div>
+                        <div class="education-institution">Demonstrated strong analytical and problem-solving aptitude</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Awards & Recognition -->
+        <div class="section">
+            <div class="section-title">Awards & Recognition</div>
+            <div class="award-item">
+                <div class="award-title">Spot Award (2021, 2022, 2024)</div>
+                <div>Recognized multiple times for timely deliverables, accessibility (WCAG 2.1) compliance, and exceptional production support for HSBC and CBX-S projects.</div>
+            </div>
+            <div class="award-item">
+                <div class="award-title">Special Recognition (March 2024)</div>
+                <div>Honored by team for outstanding contributions and impact.</div>
+            </div>
+            <div class="award-item">
+                <div class="award-title">Nominated for Sergey Bubka Award for Individual Excellence (September 2024)</div>
+                <div>Organization-level nomination for Best Support Engineer (FY 2023–2024).</div>
+            </div>
+        </div>
+
+        <!-- Personal Projects -->
+        <div class="section">
+            <div class="section-title">Personal Projects</div>
+            <div class="project-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Paramatrix Tech</div>
+                        <div class="company-name">Personal Project | Live Site: paramatrix-tech-in.github.io</div>
+                    </div>
+                    <div class="job-duration">HTML/CSS/JavaScript</div>
+                </div>
+                <div class="project-description">
+                    <ul>
+                        <li>Developed live static website with professional branding, responsive design, and production-grade polish</li>
+                        <li>Implemented responsive sections, modern UI/UX patterns, and optimized performance for seamless user experience</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Inventor App Frontend</div>
+                        <div class="company-name">Personal Project | GitHub: github.com/Nikhilkumbhare97/inventor-app-frontend</div>
+                    </div>
+                    <div class="job-duration">Angular 16</div>
+                </div>
+                <div class="project-description">
+                    <ul>
+                        <li>Developed Angular 16 frontend application with modular architecture, reusable UI components, and robust state management</li>
+                        <li>Implemented modern Angular patterns including services, dependency injection, and component-based architecture</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">BookStore - E-Commerce Application</div>
+                        <div class="company-name">Personal Project | GitHub: github.com/Nikhilkumbhare97/BookStore</div>
+                    </div>
+                    <div class="job-duration">Angular 9</div>
+                </div>
+                <div class="project-description">
+                    <ul>
+                        <li>Built full-featured e-commerce application with catalog browsing, shopping cart functionality, and checkout orchestration</li>
+                        <li>Demonstrated proficiency in Angular framework, state management, and user experience design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certifications / Training -->
+        <div class="section">
+            <div class="section-title">Certifications / Training</div>
+            <div class="award-item">
+                <div>Hands-on Programming and Git Skills – BridgeLabz, Feb 2021</div>
+            </div>
+            <div class="award-item">
+                <div>Linux Terminal Commands – BridgeLabz, Feb 2021</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
